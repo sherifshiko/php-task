@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: url("./../images/Home.webp");
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+
+}   
+
