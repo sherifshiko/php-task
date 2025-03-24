@@ -97,6 +97,8 @@ if (count($error) > 0) {
     $_SESSION['user_error'] = $error;
     header("location:http://localhost/php-task/users.php");
 }else{
-    
+    # code...
+    session_start();
+    $_SESSION['save_successively'] = $username;
     header("location:http://localhost/php-task/index.php");
 }

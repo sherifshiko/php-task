@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+if (isset($_SESSION['save_successively'])) {
+  # code...
+  $name_user = $_SESSION['save_successively'];
+  unset($_SESSION['save_successively']);
+}
+
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +51,7 @@
 
 
 
-<h1 class="text-primary size">welcome to our store</h1>
+<h1 class="text-primary size"><?php echo isset($name_user)?$name_user:'' ?> ,welcome to our store</h1>
 
 
 </section>
